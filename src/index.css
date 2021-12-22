@@ -1,13 +1,52 @@
-body {
+*{
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+#root{
+  display: grid;
+  grid-template-columns:repeat(8, 1fr);
+  grid-template-rows:repeat(4, 234px);
+}
+.container{
+  align-items: center;
+  background: white;
+  border-radius: 3px;
+  box-shadow: 1px 5px 14px 5px rgba(0,0,0,0.70);
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  grid-row: 2/4;
+  grid-column: 3/7;
+  padding: 2rem 6rem;
+}
+
+.icon{
+  align-self: flex-start;
+  font-size: 8rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+button{
+  align-self: flex-end;
+  border: none;
+  border-radius: 50%;
+  box-shadow:  5px 5px 15px -5px rgba(0,0,0,0.64);
+  color: #fff;
+  font-size: 2.5rem;
+  padding: 1.5rem;
 }
